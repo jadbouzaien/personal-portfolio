@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0FF6C"/><stop offset="1" stop-color="#6BFDD9"/></linearGradient></defs>
+<circle cx="40.0" cy="40.0" r="40.0" fill="url(#g)"/>
+<text x="50%" y="50%" dy=".35em" text-anchor="middle" font-family="Montserrat, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#163031">Y</text>
+</svg>
