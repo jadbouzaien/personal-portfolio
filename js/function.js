@@ -230,25 +230,50 @@
 		}
 	});
 
+	/* Translation helper provided by i18n.js */
+	function t(fr, en){
+		return window.JB_I18N ? window.JB_I18N.t(fr, en) : en;
+	}
+
 	function submitForm(){
-		/* Ajax call to submit form */
+		/* Ajax call to submit form: FormSubmit forwards the message by e-mail */
+		var payload = {};
+		$.each($contactform.serializeArray(), function(i, field){
+			payload[field.name] = field.value;
+		});
+		payload._subject = "Portfolio - " + (payload.fname || "") + " " + (payload.lname || "");
+		payload._replyto = payload.email;
+		payload._template = "table";
+
+		var $btn = $contactform.find("button[type='submit']");
+		$btn.prop("disabled", true);
+
 		$.ajax({
 			type: "POST",
-			url: "form-process.php",
-			data: $contactform.serialize(),
-			success : function(text){
-				if (text === "success"){
+			url: "https://formsubmit.co/ajax/jad.bouzaien@gmail.com",
+			data: JSON.stringify(payload),
+			contentType: "application/json",
+			dataType: "json",
+			headers: { "Accept": "application/json" },
+			success : function(response){
+				if (response && String(response.success) === "true"){
 					formSuccess();
 				} else {
-					submitMSG(false,text);
+					submitMSG(false, t("Une erreur est survenue, vous pouvez aussi m'écrire à jad.bouzaien@gmail.com", "Something went wrong, you can also e-mail me at jad.bouzaien@gmail.com"));
 				}
+			},
+			error : function(){
+				submitMSG(false, t("Une erreur est survenue, vous pouvez aussi m'écrire à jad.bouzaien@gmail.com", "Something went wrong, you can also e-mail me at jad.bouzaien@gmail.com"));
+			},
+			complete : function(){
+				$btn.prop("disabled", false);
 			}
 		});
 	}
 
 	function formSuccess(){
 		$contactform[0].reset();
-		submitMSG(true, "Message Sent Successfully!")
+		submitMSG(true, t("Message envoyé, je vous réponds très vite !", "Message sent, I'll get back to you shortly!"))
 	}
 
 	function submitMSG(valid, msg){

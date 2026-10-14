@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="J'intègre l'IA générative au cœur des produits métier : agents qui lisent et extraient les données d'un rapport d'expertise, préparent un ordre de réparati" data-en-content="I bring generative AI to the core of business products: agents that read and extract data from assessment reports, prepare repair orders, follow up with cu">
+	<meta name="keywords" content="Jad Bouzaien, développeur full stack, freelance, Marseille, SaaS, React, Next.js, NestJS, PostgreSQL, AWS, IA agentique, agents IA, full stack developer, AI orchestration">
+	<meta name="author" content="Jad Bouzaien">
+	<!-- SEO -->
+	<link rel="canonical" href="https://jadbouzaien.fr/service-ia">
+	<link rel="alternate" hreflang="fr" href="https://jadbouzaien.fr/service-ia">
+	<link rel="alternate" hreflang="en" href="https://jadbouzaien.fr/service-ia?lang=en">
+	<link rel="alternate" hreflang="x-default" href="https://jadbouzaien.fr/service-ia">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Jad Bouzaien">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:locale:alternate" content="en_US">
+	<meta property="og:url" content="https://jadbouzaien.fr/service-ia">
+	<meta property="og:title" content="Orchestration IA &amp; agents — Jad Bouzaien" data-en-content="AI orchestration &amp; agents — Jad Bouzaien">
+	<meta property="og:description" content="J'intègre l'IA générative au cœur des produits métier : agents qui lisent et extraient les données d'un rapport d'expertise, préparent un ordre de réparati" data-en-content="I bring generative AI to the core of business products: agents that read and extract data from assessment reports, prepare repair orders, follow up with cu">
+	<meta property="og:image" content="https://jadbouzaien.fr/images/og-image.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Jad Bouzaien — développeur full stack &amp; IA">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Orchestration IA &amp; agents — Jad Bouzaien" data-en-content="AI orchestration &amp; agents — Jad Bouzaien">
+	<meta name="twitter:description" content="J'intègre l'IA générative au cœur des produits métier : agents qui lisent et extraient les données d'un rapport d'expertise, préparent un ordre de réparati" data-en-content="I bring generative AI to the core of business products: agents that read and extract data from assessment reports, prepare repair orders, follow up with cu">
+	<meta name="twitter:image" content="https://jadbouzaien.fr/images/og-image.jpg">
+	<!-- Page Title -->
+    <title data-en="AI orchestration &amp; agents — Jad Bouzaien">Orchestration IA &amp; agents — Jad Bouzaien</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+    <!-- Grid Lines Start -->
+    <div class="grid-lines">
+        <div class="grid-line-1"></div>
+        <div class="grid-line-2"></div>
+        <div class="grid-line-3"></div>
+        <div class="grid-line-4"></div>
+        <div class="grid-line-5"></div>
+    </div>
+    <!-- Grid Lines End -->
+
+    <!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="/">
+						<img src="images/logo.svg" alt="Jad Bouzaien">
+					</a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="/" data-en="Home">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/about" data-en="About">À propos</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="/services">Services</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="/service-conception" data-en="Product design &amp; UX/UI analysis">Conception produit &amp; analyse UX/UI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-developpement" data-en="Full stack SaaS development">Développement SaaS full stack</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-infrastructure" data-en="Cloud infrastructure &amp; DevOps">Infrastructure cloud &amp; DevOps</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-ia" data-en="AI orchestration &amp; agents">Orchestration IA &amp; agents</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item submenu"><a class="nav-link" href="/portfolio">Portfolio</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-karrosserie">Karrosserie.pro</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-fleatch">Fleatch</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-yael-kempf">Yaël Kempf</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-beev">Beev</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-combo">Combo</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-conseil-capital">Conseil &amp; Capital</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="/testimonials" data-en="Testimonials">Témoignages</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/faqs" data-en="FAQs">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" data-lang-switch title="Switch to English" data-en="FR">EN</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Header Btn Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="files/CV_Jad_Bouzaien_FR.pdf" data-en-href="files/CV_Jad_Bouzaien_EN.pdf" class="btn-default" download data-en="Download CV">Télécharger mon CV</a>
+                        </div>
+                        <!-- Header Btn End -->
+					</div>
+					<!-- Main Menu End -->
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+    <!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<!-- Page Header Box Start -->
+					<div class="page-header-box">
+						<h1 class="wow fadeInUp" data-cursor="-opaque" data-en="AI orchestration <span>&amp; agents</span>">Orchestration <span>IA &amp; agents</span></h1>
+						<nav class="wow fadeInUp" data-wow-delay="0.2s">
+                            <ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/" data-en="home">accueil</a></li>
+								<li class="breadcrumb-item"><a href="/services">services</a></li>
+								<li class="breadcrumb-item active" aria-current="page" data-en="AI &amp; agents">IA &amp; agents</li>
+							</ol>
+						</nav>
+					</div>
+					<!-- Page Header Box End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+    <!-- Scrolling Ticker Section Start -->
+    <div class="our-scrolling-ticker">
+        <!-- Scrolling Ticker Start -->
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Product design"><img src="images/star-icon.svg" alt="">Conception produit</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>UX/UI analysis"><img src="images/star-icon.svg" alt="">Analyse UX/UI</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Custom SaaS"><img src="images/star-icon.svg" alt="">SaaS sur mesure</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Backend architecture"><img src="images/star-icon.svg" alt="">Architecture backend</span>
+                <span><img src="images/star-icon.svg" alt="">Cloud &amp; DevOps</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI agents"><img src="images/star-icon.svg" alt="">Agents IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI orchestration"><img src="images/star-icon.svg" alt="">Orchestration IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>E-invoicing"><img src="images/star-icon.svg" alt="">Facturation électronique</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>API integrations"><img src="images/star-icon.svg" alt="">Intégrations API</span>
+                <span><img src="images/star-icon.svg" alt="">CI/CD</span>
+            </div>
+
+            <div class="scrolling-content">
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Product design"><img src="images/star-icon.svg" alt="">Conception produit</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>UX/UI analysis"><img src="images/star-icon.svg" alt="">Analyse UX/UI</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Custom SaaS"><img src="images/star-icon.svg" alt="">SaaS sur mesure</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Backend architecture"><img src="images/star-icon.svg" alt="">Architecture backend</span>
+                <span><img src="images/star-icon.svg" alt="">Cloud &amp; DevOps</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI agents"><img src="images/star-icon.svg" alt="">Agents IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI orchestration"><img src="images/star-icon.svg" alt="">Orchestration IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>E-invoicing"><img src="images/star-icon.svg" alt="">Facturation électronique</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>API integrations"><img src="images/star-icon.svg" alt="">Intégrations API</span>
+                <span><img src="images/star-icon.svg" alt="">CI/CD</span>
+            </div>
+        </div>
+        <!-- Scrolling Ticker End -->
+    </div>
+    <!-- Scrolling Ticker Section End -->
+
+    <!-- Page Service Single Start -->
+    <div class="page-service-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Page Single Sidebar Start -->
+                    <div class="page-single-sidebar">
+                        <!-- Page Sidebar Category List Start -->
+                        <div class="page-sidebar-catagery-list wow fadeInUp">
+                            <h3 data-en="my services">mes services</h3>
+                            <ul>
+                                <li><a href="/service-conception" data-en="Product design &amp; UX/UI analysis">Conception produit &amp; analyse UX/UI</a></li>
+                                <li><a href="/service-developpement" data-en="Full stack SaaS development">Développement SaaS full stack</a></li>
+                                <li><a href="/service-infrastructure" data-en="Cloud infrastructure &amp; DevOps">Infrastructure cloud &amp; DevOps</a></li>
+                                <li><a href="/service-ia" data-en="AI orchestration &amp; agents">Orchestration IA &amp; agents</a></li>
+                            </ul>
+                        </div>
+                        <!-- Page Sidebar Category List End -->
+
+                        <!-- Sidebar CTA Box Start -->
+                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
+                            <!-- Sidebar CTA Content Start -->
+                            <div class="sidebar-cta-content">
+                                <h3 data-en="Let's talk about your project today">Discutons de votre projet dès aujourd'hui</h3>
+                                <a href="/contact" class="btn-phone"><span data-en="Contact me">Me contacter</span></a>
+                            </div>
+                            <!-- Sidebar CTA Content End -->
+
+                            <!-- Sidebar CTA Image Start -->
+                            <div class="sidebar-cta-image">
+                                <figure class="image-anime">
+                                    <img src="images/content/sidebar-cta.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- Sidebar CTA Image End -->
+                        </div>
+                        <!-- Sidebar CTA Box End -->
+                    </div>
+                    <!-- Page Single Sidebar End -->
+                </div>
+
+                <div class="col-lg-8">
+                    <!-- Service Single Content Start -->
+                    <div class="service-single-content">
+                        <!-- Service Feature Image Start -->
+                        <div class="service-feature-image">
+                            <figure class="image-anime reveal">
+                                <img src="images/content/service-ai.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Service Feature Image End -->
+
+                        <!-- Service Entry Start -->
+                        <div class="service-entry">
+                            <p class="wow fadeInUp" data-en="I bring generative AI to the core of business products: agents that read and extract data from assessment reports, prepare repair orders, follow up with customers, send notifications at every step or surface recommendations in a control tower.">J'intègre l'IA générative au cœur des produits métier : agents qui lisent et extraient les données d'un rapport d'expertise, préparent un ordre de réparation, relancent les clients, notifient à chaque étape ou remontent des recommandations dans une tour de contrôle.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" data-en="I orchestrate these agents with the Claude and OpenAI APIs, tools (function calling, MCP), n8n workflows and scheduled jobs — with guardrails, human validation when needed and cost tracking. Day to day, I also build with Claude Code to ship faster.">J'orchestre ces agents avec les API de Claude et d'OpenAI, des outils (function calling, MCP), des workflows n8n et des tâches planifiées — avec des garde-fous, une validation humaine quand il le faut et un suivi des coûts. Au quotidien, je développe aussi avec Claude Code pour livrer plus vite.</p>
+
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="wow fadeInUp" data-wow-delay="0.4s" data-cursor="-opaque" data-en="AI that <span>pays off</span>">Une IA <span>qui rapporte</span></h2>
+                                <P class="wow fadeInUp" data-wow-delay="0.6s" data-en="No AI for AI's sake: we start from a measurable pain point and measure the gain. The agent is connected to your real data, and its actions are logged and reversible.">Pas d'IA pour l'IA : on part d'un irritant mesurable et on mesure le gain. L'agent est branché sur vos vraies données, ses actions sont tracées et réversibles.</P>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <ul class="wow fadeInUp" data-wow-delay="0.8s">
+                                <li data-en="Conversational &amp; autonomous AI agents">Agents IA conversationnels &amp; autonomes</li>
+                                <li data-en="Document extraction (PDFs, reports, registrations)">Extraction de documents (PDF, rapports, cartes grises)</li>
+                                <li data-en="Orchestration: tools, MCP, n8n, job queues">Orchestration : outils, MCP, n8n, files de tâches</li>
+                                <li data-en="Guardrails, human validation &amp; cost tracking">Garde-fous, validation humaine &amp; suivi des coûts</li>
+                            </ul>
+
+                            <!-- Service Entry Box Start  -->
+                            <div class="service-entry-box">
+                                <!-- Service Entry Item Start  -->
+                                <div class="service-entry-item wow fadeInUp">
+                                    <div class="icon-box">
+                                        <img src="images/icon-services-7.svg" alt="">
+                                    </div>
+                                    <div class="service-entry-item-content">
+                                        <h3 data-en="Custom AI agents">Agents IA sur mesure</h3>
+                                    </div>
+                                </div>
+                                <!-- Service Entry Item End  -->
+
+                                <!-- Service Entry Item Start  -->
+                                <div class="service-entry-item wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box">
+                                        <img src="images/icon-services-5.svg" alt="">
+                                    </div>
+                                    <div class="service-entry-item-content">
+                                        <h3 data-en="Orchestrated workflows">Workflows orchestrés</h3>
+                                    </div>
+                                </div>
+                                <!-- Service Entry Item End  -->
+
+                                <!-- Service Entry Item Start  -->
+                                <div class="service-entry-item wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="icon-box">
+                                        <img src="images/icon-services-4.svg" alt="">
+                                    </div>
+                                    <div class="service-entry-item-content">
+                                        <h3 data-en="Control tower &amp; AI alerts">Tour de contrôle &amp; alertes IA</h3>
+                                    </div>
+                                </div>
+                                <!-- Service Entry Item End  -->
+
+                            </div>
+                            <!-- Service Entry Box End  -->
+
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="wow fadeInUp" data-cursor="-opaque" data-en="Agentic AI <span>in production</span>">L'IA agentique <span>en production</span></h2>
+                                <P class="wow fadeInUp" data-wow-delay="0.2s" data-en="On Karrosserie.pro, AI reads assessment reports, prepares repair orders and an agent answers customers 24/7; on Fleatch, Claude is built into the API to assist fleet managers.">Sur Karrosserie.pro, l'IA lit les rapports d'expertise, prépare les ordres de réparation et un agent répond aux clients 24/7 ; sur Fleatch, Claude est intégré à l'API pour assister les gestionnaires de flotte.</P>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- Service Entry Image Counter Start -->
+                            <div class="service-entry-image-counter">
+                                <!-- Service Entry Image Start -->
+                                <div class="service-entry-image">
+                                    <figure class="image-anime reveal">
+                                        <img src="images/content/entry-ai.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <!-- Service Entry Image End -->
+
+                                <!-- Service Entry Counter Box Start -->
+                                <div class="service-entry-counter-box">
+                                    <!-- Service Entry Counter Item Start -->
+                                    <div class="service-entry-counter-item">
+                                        <h2>-<span>70</span>%</h2>
+                                        <p data-en="of “where is my car?” calls for body shops using the AI agent.">d'appels « où en est ma voiture ? » pour les ateliers équipés de l'agent IA.</p>
+                                    </div>
+                                    <!-- Service Entry Counter Item End -->
+
+                                    <!-- Service Entry Counter Item Start -->
+                                    <div class="service-entry-counter-item">
+                                        <h2><span>24</span>/7</h2>
+                                        <p data-en="an agent available to notify and answer customers at every step.">un agent disponible pour notifier et répondre aux clients à chaque étape.</p>
+                                    </div>
+                                    <!-- Service Entry Counter Item End -->
+
+                                </div>
+                                <!-- Service Entry Counter Box End -->
+                            </div>
+                            <!-- Service Entry Image Counter End -->
+
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="wow fadeInUp" data-cursor="-opaque" data-en="Putting an AI agent <span>into production</span>">Mettre un agent IA <span>en production</span></h2>
+                                <P class="wow fadeInUp" data-wow-delay="0.2s" data-en="A pragmatic approach, from use case to a supervised agent in production.">Une démarche pragmatique, du cas d'usage à l'agent supervisé en production.</P>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- Service Entry Step Box Start -->
+                            <div class="service-entry-step-box">
+                                <!-- Service Entry Step Item Start -->
+                                <div class="service-entry-step-item wow fadeInUp">
+                                    <h2>01</h2>
+                                    <h3 data-en="Identify">Identifier</h3>
+                                    <p data-en="The use case and expected gain">Le cas d'usage et le gain attendu</p>
+                                </div>
+                                <!-- Service Entry Step Item End -->
+
+                                <!-- Service Entry Step Item Start -->
+                                <div class="service-entry-step-item wow fadeInUp" data-wow-delay="0.2s">
+                                    <h2>02</h2>
+                                    <h3 data-en="Orchestrate">Orchestrer</h3>
+                                    <p data-en="Model, tools, data and guardrails">Modèle, outils, données et garde-fous</p>
+                                </div>
+                                <!-- Service Entry Step Item End -->
+
+                                <!-- Service Entry Step Item Start -->
+                                <div class="service-entry-step-item wow fadeInUp" data-wow-delay="0.4s">
+                                    <h2>03</h2>
+                                    <h3 data-en="Measure">Mesurer</h3>
+                                    <p data-en="Monitoring, costs and continuous improvement">Suivi, coûts et amélioration continue</p>
+                                </div>
+                                <!-- Service Entry Step Item End -->
+
+                            </div>
+                            <!-- Service Entry Step Box End -->
+                        </div>
+                        <!-- Service Entry End -->
+
+                        <!-- Our FAQ Section Start -->
+                        <div class="page-faq-section">
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="wow fadeInUp" data-cursor="-opaque" data-en="Frequently asked <span>questions</span>">Questions <span>fréquentes</span></h2>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="faqaccordion">
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" data-en="What kind of projects do you work on?">Sur quels types de projets intervenez-vous ?</button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqaccordion">
+                                <div class="accordion-body">
+                                    <p data-en="Mainly business SaaS products and internal tools: product design, front-end and back-end development, databases, infrastructure and AI integration. I also build conversion-focused acquisition websites and take over existing projects (bugs, technical debt, performance).">Principalement des SaaS métier et des outils internes : conception du produit, développement front et back, base de données, infrastructure et intégration d'IA. J'interviens aussi sur des sites d'acquisition orientés conversion et sur la reprise de projets existants (bugs, dette technique, performances).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2" data-en="How do you bring AI into a product?">Comment intégrez-vous l'IA dans un produit ?</button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#faqaccordion">
+                                <div class="accordion-body">
+                                    <p data-en="I start from a measurable business pain point (data entry, follow-ups, triage, customer support), then design the agent: the model (Claude, OpenAI…), the tools and data it can access, guardrails and human validation. Workflows are orchestrated (APIs, n8n, scheduled jobs) and monitored in production.">Je pars d'un irritant métier mesurable (saisie, relances, tri, support client), puis je conçois l'agent : modèle (Claude, OpenAI…), outils et données auxquels il a accès, garde-fous et validation humaine. Les workflows sont orchestrés (API, n8n, tâches planifiées) et suivis en production.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" data-en="Do you handle hosting and deployment?">Prenez-vous en charge l'hébergement et le déploiement ?</button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqaccordion">
+                                <div class="accordion-body">
+                                    <p data-en="Yes: Docker containers, deployment on AWS, GCP, OVHcloud or Vercel, GitHub Actions CI/CD pipelines with automated tests, backups and monitoring. You keep full ownership of your code and accounts.">Oui : conteneurisation Docker, déploiement sur AWS, GCP, OVHcloud ou Vercel, pipelines CI/CD GitHub Actions avec tests automatisés, sauvegardes et supervision. Vous gardez la propriété de votre code et de vos comptes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" data-en="Do you work remotely?">Travaillez-vous à distance ?</button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqaccordion">
+                                <div class="accordion-body">
+                                    <p data-en="I'm based in Marseille, France, and work as a freelancer, remotely across France and abroad, with regular video check-ins. I'm happy to travel for scoping workshops.">Je suis basé à Marseille et je travaille en freelance, à distance partout en France et à l'international, avec des points réguliers en visio. Je me déplace volontiers pour les ateliers de cadrage.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" data-en="How do we get started?">Comment démarre-t-on un projet ?</button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqaccordion">
+                                <div class="accordion-body">
+                                    <p data-en="With a 30-minute call to understand your needs. I then send a written proposal — scope, mock-ups, architecture, schedule and budget — before writing the first line of code.">Par un premier échange de 30 minutes pour comprendre votre besoin. Je vous propose ensuite un cadrage écrit — périmètre, maquettes, architecture, planning et budget — avant d'écrire la première ligne de code.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- Our FAQ Section End -->
+                    </div>
+                    <!-- Service Single Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Service Single End -->
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Footer Header Start -->
+                    <div class="footer-header">
+                        <!-- Footer Title Start -->
+                        <div class="footer-title">
+                            <h2 data-en="Ready to work together?">Prêt à travailler ensemble ?</h2>
+                            <p data-en="From design to production, let's build a useful, robust, AI-powered product.">De la conception à la mise en production, construisons un produit utile, solide et augmenté par l'IA.</p>
+                        </div>
+                        <!-- Footer Title End -->
+
+                        <!-- Footer Contact Circle Start -->
+                        <div class="footer-get-started-circle">
+                            <a href="/contact"><img src="images/get-started-circle-dark-fr.png" data-en-src="images/get-started-circle-dark.png" alt=""></a>
+                        </div>
+                        <!-- Footer Contact Circle End -->
+                    </div>
+                    <!-- Footer Header End -->
+                </div>
+
+                <div class="col-lg-5 col-md-12">
+                    <!-- About Footer Start -->
+                    <div class="about-footer">
+                        <!-- Footer Logo Start -->
+                        <div class="footer-logo">
+                            <img src="images/footer-logo.svg" alt="Jad Bouzaien">
+                        </div>
+                        <!-- Footer Logo End -->
+
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content">
+                            <p data-en="Freelance full stack developer based in Marseille, France. I design, build and deploy business SaaS products, and orchestrate AI agents that save your teams time.">Développeur full stack freelance basé à Marseille. Je conçois, développe et déploie des SaaS métier, et j'y orchestre des agents IA qui font gagner du temps à vos équipes.</p>
+                        </div>
+                        <!-- About Footer Content End -->
+
+                        <!-- Footer Social Link Start -->
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/jad-bouzaien" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="mailto:jad.bouzaien@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Social Link End -->
+                    </div>
+                    <!-- About Footer End -->
+                </div>
+
+                <div class="col-lg-2 col-md-3">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links">
+                        <h3 data-en="quick links">liens rapides</h3>
+                        <ul>
+                            <li><a href="/" data-en="home">accueil</a></li>
+                            <li><a href="/about" data-en="about">à propos</a></li>
+                            <li><a href="/services">services</a></li>
+                            <li><a href="/portfolio">portfolio</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Links End -->
+                </div>
+
+                <div class="col-lg-3 col-md-5">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links">
+                        <h3 data-en="My services">Mes services</h3>
+                        <ul>
+                            <li><a href="/service-conception" data-en="Product design &amp; UX/UI analysis">Conception produit &amp; analyse UX/UI</a></li>
+                            <li><a href="/service-developpement" data-en="Full stack SaaS development">Développement SaaS full stack</a></li>
+                            <li><a href="/service-infrastructure" data-en="Cloud infrastructure &amp; DevOps">Infrastructure cloud &amp; DevOps</a></li>
+                            <li><a href="/service-ia" data-en="AI orchestration &amp; agents">Orchestration IA &amp; agents</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Links End -->
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links">
+                        <h3 data-en="Projects">Projets</h3>
+                        <ul>
+                            <li><a href="/portfolio-karrosserie">Karrosserie.pro</a></li>
+                            <li><a href="/portfolio-fleatch">Fleatch</a></li>
+                            <li><a href="/portfolio-yael-kempf">Yaël Kempf</a></li>
+                            <li><a href="/portfolio-beev">Beev</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Links End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Footer Copyright Start -->
+                    <div class="footer-copyright-text">
+                        <p data-en="Copyright © 2026 Jad Bouzaien. All Rights Reserved.">Copyright © 2026 Jad Bouzaien. Tous droits réservés.</p>
+                    </div>
+                    <!-- Footer Copyright End -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+	<script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- FR / EN content switch (before function.js) -->
+    <script src="js/i18n.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+</body>
+</html>

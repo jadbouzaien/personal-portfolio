@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
+	<meta name="description" content="Questions fréquentes : projets, technologies, IA, hébergement, facturation et maintenance." data-en-content="Frequently asked questions: projects, technologies, AI, hosting, billing and maintenance.">
+	<meta name="keywords" content="Jad Bouzaien, développeur full stack, freelance, Marseille, SaaS, React, Next.js, NestJS, PostgreSQL, AWS, IA agentique, agents IA, full stack developer, AI orchestration">
+	<meta name="author" content="Jad Bouzaien">
+	<!-- SEO -->
+	<link rel="canonical" href="https://jadbouzaien.fr/faqs">
+	<link rel="alternate" hreflang="fr" href="https://jadbouzaien.fr/faqs">
+	<link rel="alternate" hreflang="en" href="https://jadbouzaien.fr/faqs?lang=en">
+	<link rel="alternate" hreflang="x-default" href="https://jadbouzaien.fr/faqs">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Jad Bouzaien">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:locale:alternate" content="en_US">
+	<meta property="og:url" content="https://jadbouzaien.fr/faqs">
+	<meta property="og:title" content="FAQ — Jad Bouzaien" data-en-content="FAQs — Jad Bouzaien">
+	<meta property="og:description" content="Questions fréquentes : projets, technologies, IA, hébergement, facturation et maintenance." data-en-content="Frequently asked questions: projects, technologies, AI, hosting, billing and maintenance.">
+	<meta property="og:image" content="https://jadbouzaien.fr/images/og-image.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Jad Bouzaien — développeur full stack &amp; IA">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="FAQ — Jad Bouzaien" data-en-content="FAQs — Jad Bouzaien">
+	<meta name="twitter:description" content="Questions fréquentes : projets, technologies, IA, hébergement, facturation et maintenance." data-en-content="Frequently asked questions: projects, technologies, AI, hosting, billing and maintenance.">
+	<meta name="twitter:image" content="https://jadbouzaien.fr/images/og-image.jpg">
 	<!-- Page Title -->
-    <title>Pixion - Personal Portfolio HTML Template</title>
+    <title data-en="FAQs — Jad Bouzaien">FAQ — Jad Bouzaien</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -60,8 +80,8 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="./">
-						<img src="images/logo.svg" alt="Logo">
+					<a class="navbar-brand" href="/">
+						<img src="images/logo.svg" alt="Jad Bouzaien">
 					</a>
 					<!-- Logo End -->
 
@@ -69,40 +89,36 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="./">Home</a>
+                                <li class="nav-item"><a class="nav-link" href="/" data-en="Home">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/about" data-en="About">À propos</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="/services">Services</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index.html">Home - Main</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-image.html">Home - Image</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
-                                    </ul>
-                                </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="portfolio-single.html">Portfolio details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team-single.html">Team Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing Plan</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-conception" data-en="Product design &amp; UX/UI analysis">Conception produit &amp; analyse UX/UI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-developpement" data-en="Full stack SaaS development">Développement SaaS full stack</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-infrastructure" data-en="Cloud infrastructure &amp; DevOps">Infrastructure cloud &amp; DevOps</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/service-ia" data-en="AI orchestration &amp; agents">Orchestration IA &amp; agents</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                         
+                                <li class="nav-item submenu"><a class="nav-link" href="/portfolio">Portfolio</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-karrosserie">Karrosserie.pro</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-fleatch">Fleatch</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-yael-kempf">Yaël Kempf</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-beev">Beev</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-combo">Combo</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/portfolio-conseil-capital">Conseil &amp; Capital</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="/testimonials" data-en="Testimonials">Témoignages</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/faqs" data-en="FAQs">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" data-lang-switch title="Switch to English" data-en="FR">EN</a></li>
                             </ul>
                         </div>
-                        
+
                         <!-- Header Btn Start -->
                         <div class="header-btn d-inline-flex">
-                            <a href="contact.html" class="btn-default">Download CV</a>
+                            <a href="files/CV_Jad_Bouzaien_FR.pdf" data-en-href="files/CV_Jad_Bouzaien_EN.pdf" class="btn-default" download data-en="Download CV">Télécharger mon CV</a>
                         </div>
                         <!-- Header Btn End -->
 					</div>
@@ -122,11 +138,11 @@
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="wow fadeInUp" data-cursor="-opaque">Frequently asked <span>questions</span></h1>
+						<h1 class="wow fadeInUp" data-cursor="-opaque" data-en="Frequently asked <span>questions</span>">Questions <span>fréquentes</span></h1>
 						<nav class="wow fadeInUp" data-wow-delay="0.2s">
                             <ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="./">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">FAQs</li>
+								<li class="breadcrumb-item"><a href="/" data-en="home">accueil</a></li>
+								<li class="breadcrumb-item active" aria-current="page" data-en="FAQs">FAQ</li>
 							</ol>
 						</nav>
 					</div>
@@ -142,29 +158,29 @@
         <!-- Scrolling Ticker Start -->
         <div class="scrolling-ticker-box">
             <div class="scrolling-content">
-                <span><img src="images/star-icon.svg" alt="">Website Design</span>
-                <span><img src="images/star-icon.svg" alt="">Mobile App Design</span>
-                <span><img src="images/star-icon.svg" alt="">Wireframe Design</span>
-                <span><img src="images/star-icon.svg" alt="">Dashboard Design</span>
-                <span><img src="images/star-icon.svg" alt="">Product Design</span>
-                <span><img src="images/star-icon.svg" alt="">Website Design</span>
-                <span><img src="images/star-icon.svg" alt="">Mobile App Design</span>
-                <span><img src="images/star-icon.svg" alt="">Wireframe Design</span>
-                <span><img src="images/star-icon.svg" alt="">Dashboard Design</span>
-                <span><img src="images/star-icon.svg" alt="">Product Design</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Product design"><img src="images/star-icon.svg" alt="">Conception produit</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>UX/UI analysis"><img src="images/star-icon.svg" alt="">Analyse UX/UI</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Custom SaaS"><img src="images/star-icon.svg" alt="">SaaS sur mesure</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Backend architecture"><img src="images/star-icon.svg" alt="">Architecture backend</span>
+                <span><img src="images/star-icon.svg" alt="">Cloud &amp; DevOps</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI agents"><img src="images/star-icon.svg" alt="">Agents IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI orchestration"><img src="images/star-icon.svg" alt="">Orchestration IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>E-invoicing"><img src="images/star-icon.svg" alt="">Facturation électronique</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>API integrations"><img src="images/star-icon.svg" alt="">Intégrations API</span>
+                <span><img src="images/star-icon.svg" alt="">CI/CD</span>
             </div>
 
             <div class="scrolling-content">
-                <span><img src="images/star-icon.svg" alt="">Website Design</span>
-                <span><img src="images/star-icon.svg" alt="">Mobile App Design</span>
-                <span><img src="images/star-icon.svg" alt="">Wireframe Design</span>
-                <span><img src="images/star-icon.svg" alt="">Dashboard Design</span>
-                <span><img src="images/star-icon.svg" alt="">Product Design</span>
-                <span><img src="images/star-icon.svg" alt="">Website Design</span>
-                <span><img src="images/star-icon.svg" alt="">Mobile App Design</span>
-                <span><img src="images/star-icon.svg" alt="">Wireframe Design</span>
-                <span><img src="images/star-icon.svg" alt="">Dashboard Design</span>
-                <span><img src="images/star-icon.svg" alt="">Product Design</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Product design"><img src="images/star-icon.svg" alt="">Conception produit</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>UX/UI analysis"><img src="images/star-icon.svg" alt="">Analyse UX/UI</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Custom SaaS"><img src="images/star-icon.svg" alt="">SaaS sur mesure</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>Backend architecture"><img src="images/star-icon.svg" alt="">Architecture backend</span>
+                <span><img src="images/star-icon.svg" alt="">Cloud &amp; DevOps</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI agents"><img src="images/star-icon.svg" alt="">Agents IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>AI orchestration"><img src="images/star-icon.svg" alt="">Orchestration IA</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>E-invoicing"><img src="images/star-icon.svg" alt="">Facturation électronique</span>
+                <span data-en="<img src=&quot;images/star-icon.svg&quot; alt=&quot;&quot;>API integrations"><img src="images/star-icon.svg" alt="">Intégrations API</span>
+                <span><img src="images/star-icon.svg" alt="">CI/CD</span>
             </div>
         </div>
         <!-- Scrolling Ticker End -->
@@ -181,10 +197,9 @@
                         <!-- Page Sidebar Category List Start -->
                         <div class="page-sidebar-catagery-list wow fadeInUp">
                             <ul>
-                                <li><a href="#general_questions">General Questions</a></li>
-                                <li><a href="#technologies_questions">Tools & Technologies Questions</a></li>
-                                <li><a href="#support_questions">Support Questions</a></li>
-                                <li><a href="#portfolio_questions">Experience & Portfolio Questions</a></li>
+                                <li><a href="#general_questions" data-en="General questions">Questions générales</a></li>
+                                <li><a href="#technologies_questions" data-en="Technologies &amp; AI">Technologies &amp; IA</a></li>
+                                <li><a href="#collaboration_questions" data-en="Collaboration &amp; support">Collaboration &amp; suivi</a></li>
                             </ul>
                         </div>
                         <!-- Page Sidebar Category List End -->
@@ -193,15 +208,15 @@
                         <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
                             <!-- Sidebar CTA Content Start -->
                             <div class="sidebar-cta-content">
-                                <h3>Get Started with Our  Services Today</h3>
-                                <a href="tel:123456789" class="btn-phone"><span>+1 (123) 456-789</span></a>
+                                <h3 data-en="Let's talk about your project today">Discutons de votre projet dès aujourd'hui</h3>
+                                <a href="/contact" class="btn-phone"><span data-en="Contact me">Me contacter</span></a>
                             </div>
                             <!-- Sidebar CTA Content End -->
-                            
+
                             <!-- Sidebar CTA Image Start -->
                             <div class="sidebar-cta-image">
                                 <figure class="image-anime">
-                                    <img src="images/sidebar-cta-image.jpg" alt="">
+                                    <img src="images/content/sidebar-cta.jpg" alt="">
                                 </figure>
                             </div>
                             <!-- Sidebar CTA Image End -->
@@ -216,85 +231,74 @@
                     <div class="page-faqs-catagery">
                         <!-- FAQs section start -->
                         <div class="page-faqs-accordion" id="general_questions">
+                            <!-- Section Title Start -->
                             <div class="section-title">
-                                <h2 class="wow fadeInUp" data-cursor="-opaque">General <span>questions</span></h2>
+                                <h2 class="wow fadeInUp" data-cursor="-opaque" data-en="General <span>questions</span>">Questions <span>générales</span></h2>
                             </div>
+                            <!-- Section Title End -->
+
                             <!-- FAQ Accordion Start -->
                             <div class="faq-accordion" id="accordion">
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp">
-                                    <h2 class="accordion-header" id="heading1">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                            How long does a project take to complete?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" data-en="What kind of projects do you work on?">Sur quels types de projets intervenez-vous ?</button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p data-en="Mainly business SaaS products and internal tools: product design, front-end and back-end development, databases, infrastructure and AI integration. I also build conversion-focused acquisition websites and take over existing projects (bugs, technical debt, performance).">Principalement des SaaS métier et des outils internes : conception du produit, développement front et back, base de données, infrastructure et intégration d'IA. J'interviens aussi sur des sites d'acquisition orientés conversion et sur la reprise de projets existants (bugs, dette technique, performances).</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <h2 class="accordion-header" id="heading2">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                            What is your design process?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2" data-en="How do you bring AI into a product?">Comment intégrez-vous l'IA dans un produit ?</button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p data-en="I start from a measurable business pain point (data entry, follow-ups, triage, customer support), then design the agent: the model (Claude, OpenAI…), the tools and data it can access, guardrails and human validation. Workflows are orchestrated (APIs, n8n, scheduled jobs) and monitored in production.">Je pars d'un irritant métier mesurable (saisie, relances, tri, support client), puis je conçois l'agent : modèle (Claude, OpenAI…), outils et données auxquels il a accès, garde-fous et validation humaine. Les workflows sont orchestrés (API, n8n, tâches planifiées) et suivis en production.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                    <h2 class="accordion-header" id="heading3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                            Can I make changes after the project is completed?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" data-en="Do you handle hosting and deployment?">Prenez-vous en charge l'hébergement et le déploiement ?</button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p data-en="Yes: Docker containers, deployment on AWS, GCP, OVHcloud or Vercel, GitHub Actions CI/CD pipelines with automated tests, backups and monitoring. You keep full ownership of your code and accounts.">Oui : conteneurisation Docker, déploiement sur AWS, GCP, OVHcloud ou Vercel, pipelines CI/CD GitHub Actions avec tests automatisés, sauvegardes et supervision. Vous gardez la propriété de votre code et de vos comptes.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                                    <h2 class="accordion-header" id="heading4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                            Do you work with startups or small businesses?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" data-en="Do you work remotely?">Travaillez-vous à distance ?</button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p data-en="I'm based in Marseille, France, and work as a freelancer, remotely across France and abroad, with regular video check-ins. I'm happy to travel for scoping workshops.">Je suis basé à Marseille et je travaille en freelance, à distance partout en France et à l'international, avec des points réguliers en visio. Je me déplace volontiers pour les ateliers de cadrage.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                                    <h2 class="accordion-header" id="heading5">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                            What happens if I don't like the initial designs?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" data-en="How do we get started?">Comment démarre-t-on un projet ?</button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p data-en="With a 30-minute call to understand your needs. I then send a written proposal — scope, mock-ups, architecture, schedule and budget — before writing the first line of code.">Par un premier échange de 30 minutes pour comprendre votre besoin. Je vous propose ensuite un cadrage écrit — périmètre, maquettes, architecture, planning et budget — avant d'écrire la première ligne de code.</p>
                                 </div>
-                                <!-- FAQ Item End -->
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
                             </div>
                             <!-- FAQ Accordion End -->
                         </div>
@@ -302,171 +306,106 @@
 
                         <!-- FAQs section start -->
                         <div class="page-faqs-accordion" id="technologies_questions">
+                            <!-- Section Title Start -->
                             <div class="section-title">
-                                <h2 class="wow fadeInUp" data-cursor="-opaque">Tools & technologies <span>questions</span></h2>
+                                <h2 class="wow fadeInUp" data-cursor="-opaque" data-en="Technologies <span>&amp; AI</span>">Technologies <span>&amp; IA</span></h2>
                             </div>
+                            <!-- Section Title End -->
+
                             <!-- FAQ Accordion Start -->
                             <div class="faq-accordion" id="accordion1">
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp">
-                                    <h2 class="accordion-header" id="heading6">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                                            Can I make changes after the project is completed?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6" data-bs-parent="#accordion1">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6" data-en="Which technologies do you use?">Quelles technologies utilisez-vous ?</button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    <p data-en="TypeScript end to end: React and Next.js on the front end, Node.js, NestJS or Express on the back end, PostgreSQL (Prisma, Supabase) for data, Docker and GitHub Actions to deploy on AWS, GCP, OVHcloud or Vercel. For AI: the Claude and OpenAI APIs, n8n, Claude Code.">TypeScript de bout en bout : React et Next.js côté front, Node.js, NestJS ou Express côté back, PostgreSQL (Prisma, Supabase) pour les données, Docker et GitHub Actions pour le déploiement sur AWS, GCP, OVHcloud ou Vercel. Côté IA : API Claude et OpenAI, n8n, Claude Code.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <h2 class="accordion-header" id="heading7">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                            Do you work with startups or small businesses?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordion1">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" data-en="Can you take over an existing project?">Pouvez-vous reprendre un projet existant ?</button>
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    <p data-en="Yes, it's actually a specialty: code and infrastructure audit, fixing priority bugs, adding tests, then gradually reducing technical debt — without rewriting everything.">Oui, c'est même une spécialité : audit du code et de l'infrastructure, correction des bugs prioritaires, ajout de tests, puis réduction progressive de la dette technique — sans tout réécrire.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                    <h2 class="accordion-header" id="heading8">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                            What happens if I don't like the initial designs?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordion1">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" data-en="Is my data safe with AI?">Mes données sont-elles en sécurité avec l'IA ?</button>
+                            </h2>
+                            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    <p data-en="Agents only access the data they need, through controlled tools. I favour providers and settings that don't train models on your data, and processing complies with GDPR.">Les agents n'accèdent qu'aux données nécessaires, via des outils contrôlés. Je privilégie les fournisseurs et options qui n'entraînent pas leurs modèles sur vos données, et les traitements respectent le RGPD.</p>
                                 </div>
-                                <!-- FAQ Item End -->
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
                             </div>
                             <!-- FAQ Accordion End -->
                         </div>
                         <!-- FAQs section End -->
 
                         <!-- FAQs section start -->
-                        <div class="page-faqs-accordion" id="support_questions">
+                        <div class="page-faqs-accordion" id="collaboration_questions">
+                            <!-- Section Title Start -->
                             <div class="section-title">
-                                <h2 class="wow fadeInUp" data-cursor="-opaque">Support <span>questions</span></h2>
+                                <h2 class="wow fadeInUp" data-cursor="-opaque" data-en="Collaboration <span>&amp; support</span>">Collaboration <span>&amp; suivi</span></h2>
                             </div>
+                            <!-- Section Title End -->
+
                             <!-- FAQ Accordion Start -->
                             <div class="faq-accordion" id="accordion2">
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp">
-                                    <h2 class="accordion-header" id="heading9">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                            Can I make changes after the project is completed?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordion2">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading9">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" data-en="How does billing work?">Comment se passe la facturation ?</button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p data-en="Either time and materials (daily rate) or fixed price on a defined scope, depending on the project. The quote details deliverables, schedule and payment milestones.">En régie (taux journalier) ou au forfait sur un périmètre cadré, selon le projet. Le devis détaille les livrables, le planning et les jalons de paiement.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <h2 class="accordion-header" id="heading10">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-                                            Do you work with startups or small businesses?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10" data-bs-parent="#accordion2">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading10">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10" data-en="Do you provide maintenance after delivery?">Assurez-vous la maintenance après la livraison ?</button>
+                            </h2>
+                            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p data-en="Yes: fixes, security updates, monitoring and new features, on a monthly plan or on demand.">Oui : corrections, mises à jour de sécurité, supervision et évolutions, au forfait mensuel ou à la demande.</p>
                                 </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                    <h2 class="accordion-header" id="heading11">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                            What happens if I don't like the initial designs?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordion2">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading11">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11" data-en="Do you work with existing teams?">Travaillez-vous avec des équipes existantes ?</button>
+                            </h2>
+                            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p data-en="Of course. I plug into your tools (Git, tickets, Slack), document what I deliver and train your teams, including on using AI in development.">Bien sûr. Je m'intègre à vos outils (Git, tickets, Slack), je documente ce que je livre et je forme vos équipes, notamment à l'usage de l'IA dans le développement.</p>
                                 </div>
-                                <!-- FAQ Item End -->
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
                             </div>
                             <!-- FAQ Accordion End -->
                         </div>
                         <!-- FAQs section End -->
 
-                        <!-- FAQs section start -->
-                        <div class="page-faqs-accordion" id="portfolio_questions">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-cursor="-opaque">Experience & portfolio <span>questions</span></h2>
-                            </div>
-                            <!-- FAQ Accordion Start -->
-                            <div class="faq-accordion" id="accordion3">
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp">
-                                    <h2 class="accordion-header" id="heading12">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-                                            Can I make changes after the project is completed?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse12" class="accordion-collapse collapse show" aria-labelledby="heading12" data-bs-parent="#accordion3">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <h2 class="accordion-header" id="heading13">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                            Do you work with startups or small businesses?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordion3">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- FAQ Item End -->
-
-                                <!-- FAQ Item Start -->
-                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                    <h2 class="accordion-header" id="heading14">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                                            What happens if I don't like the initial designs?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordion3">
-                                        <div class="accordion-body">
-                                            <p>My process involves three main steps: discovery, design, and delivery. First, I'll gather all the necessary details about your project, including your goals and target audience. Then, I create wireframes and prototypes to ensure we're aligned before moving.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- FAQ Item End -->
-                            </div>
-                            <!-- FAQ Accordion End -->
-                        </div>
-                        <!-- FAQs section End -->
                     </div>
                     <!-- Page FAQs Category End -->
                 </div>
@@ -484,58 +423,56 @@
                     <div class="footer-header">
                         <!-- Footer Title Start -->
                         <div class="footer-title">
-                            <h2>Ready to work with us?</h2>
-                            <p>Partner with our design agency for your business with amazing results.</p>
+                            <h2 data-en="Ready to work together?">Prêt à travailler ensemble ?</h2>
+                            <p data-en="From design to production, let's build a useful, robust, AI-powered product.">De la conception à la mise en production, construisons un produit utile, solide et augmenté par l'IA.</p>
                         </div>
                         <!-- Footer Title End -->
 
                         <!-- Footer Contact Circle Start -->
                         <div class="footer-get-started-circle">
-                            <a href="contact.html"><img src="images/get-started-circle-dark.png" alt=""></a>
+                            <a href="/contact"><img src="images/get-started-circle-dark-fr.png" data-en-src="images/get-started-circle-dark.png" alt=""></a>
                         </div>
                         <!-- Footer Contact Circle End -->
                     </div>
-                    <!-- Footer Header End -->                  
+                    <!-- Footer Header End -->
                 </div>
-                
+
                 <div class="col-lg-5 col-md-12">
                     <!-- About Footer Start -->
                     <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/footer-logo.svg" alt="">
+                            <img src="images/footer-logo.svg" alt="Jad Bouzaien">
                         </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">
-                            <p>Crafting intuitive, user-centric designs that bring ideas to life. With a passion for innovation and creativity, I help businesses and individuals.</p>
-                        </div>           
+                            <p data-en="Freelance full stack developer based in Marseille, France. I design, build and deploy business SaaS products, and orchestrate AI agents that save your teams time.">Développeur full stack freelance basé à Marseille. Je conçois, développe et déploie des SaaS métier, et j'y orchestre des agents IA qui font gagner du temps à vos équipes.</p>
+                        </div>
                         <!-- About Footer Content End -->
-                         
+
                         <!-- Footer Social Link Start -->
                         <div class="footer-social-links">
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jad-bouzaien" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="mailto:jad.bouzaien@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a></li>
                             </ul>
                         </div>
                         <!-- Footer Social Link End -->
                     </div>
                     <!-- About Footer End -->
                 </div>
-                
+
                 <div class="col-lg-2 col-md-3">
                     <!-- Footer Links Start -->
                     <div class="footer-links">
-                        <h3>quick links</h3>
+                        <h3 data-en="quick links">liens rapides</h3>
                         <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="about.html">about us</a></li>
-                            <li><a href="services.html">services</a></li>
-                            <li><a href="portfolio.html">portofilo</a></li>
+                            <li><a href="/" data-en="home">accueil</a></li>
+                            <li><a href="/about" data-en="about">à propos</a></li>
+                            <li><a href="/services">services</a></li>
+                            <li><a href="/portfolio">portfolio</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links End -->
@@ -544,12 +481,12 @@
                 <div class="col-lg-3 col-md-5">
                     <!-- Footer Links Start -->
                     <div class="footer-links">
-                        <h3>Our Services</h3>
+                        <h3 data-en="My services">Mes services</h3>
                         <ul>
-                            <li><a href="service-single.html">Mobile App Design</a></li>
-                            <li><a href="service-single.html">UI/UX Design</a></li>
-                            <li><a href="service-single.html">Branding and Visual Identity</a></li>
-                            <li><a href="service-single.html">Consultation and Strategy</a></li>
+                            <li><a href="/service-conception" data-en="Product design &amp; UX/UI analysis">Conception produit &amp; analyse UX/UI</a></li>
+                            <li><a href="/service-developpement" data-en="Full stack SaaS development">Développement SaaS full stack</a></li>
+                            <li><a href="/service-infrastructure" data-en="Cloud infrastructure &amp; DevOps">Infrastructure cloud &amp; DevOps</a></li>
+                            <li><a href="/service-ia" data-en="AI orchestration &amp; agents">Orchestration IA &amp; agents</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links End -->
@@ -558,12 +495,12 @@
                 <div class="col-lg-2 col-md-4">
                     <!-- Footer Links Start -->
                     <div class="footer-links">
-                        <h3>View My Work</h3>
+                        <h3 data-en="Projects">Projets</h3>
                         <ul>
-                            <li><a href="#">Behance</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Upwork</a></li>
-                            <li><a href="#">Fiverr</a></li>
+                            <li><a href="/portfolio-karrosserie">Karrosserie.pro</a></li>
+                            <li><a href="/portfolio-fleatch">Fleatch</a></li>
+                            <li><a href="/portfolio-yael-kempf">Yaël Kempf</a></li>
+                            <li><a href="/portfolio-beev">Beev</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links End -->
@@ -572,7 +509,7 @@
                 <div class="col-lg-12">
                     <!-- Footer Copyright Start -->
                     <div class="footer-copyright-text">
-                        <p>Copyright © 2025 All Rights Reserved.</p>
+                        <p data-en="Copyright © 2026 Jad Bouzaien. All Rights Reserved.">Copyright © 2026 Jad Bouzaien. Tous droits réservés.</p>
                     </div>
                     <!-- Footer Copyright End -->
                 </div>
@@ -612,6 +549,8 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
+    <!-- FR / EN content switch (before function.js) -->
+    <script src="js/i18n.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 </body>
